@@ -1,0 +1,95 @@
+<!DOCTYPE html >
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>زال هاست</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            .move-up {
+              transition: transform 0.3s ease;
+            }
+            .move-up:hover {
+              transform: translateY(-8px);
+            }
+          </style>
+    </head>
+    
+    <body class="bg-gray-100">
+        <div class="bg-black bg-no-repeat bg-cover min-h-screen" style="background-image: url(./../img/second-section-overlay.png)">
+            <header class="text-white sticky top-0 z-20 sm:w-4/6 w-full mx-auto">
+                <section class="mx-auto p-4 flex justify-between h-28">
+                    <div class="flex justify-between flex-grow mr-8">
+                        <nav class="flex items-center space-x-4">
+                            <a href="#" class="text-base py-3 px-9 bg-orange-base border-2 border-orange-base
+                            rounded-l-full rounded-r-full transition duration-300 hover:bg-transparent hover:border-gray-400 ">ورود/ثبت نام</a>
+                        </nav>
+                        <nav id="main-menu" class="hidden sm:flex items-center space-x-4 text-base menu menu-5">
+                            <a href="#" class="text-gray-300 hover:text-white">کیر اختصاصی</a>
+                            <a href="#" class="text-gray-300 hover:text-white">سرور اختصاصی</a>
+                            <a href="#" class="text-gray-300 hover:text-white">سرور مجازی</a>
+                            <a href="#" class="text-gray-300 hover:text-white">هاست</a>
+                        </nav>
+                    </div>   
+                    <h1 class="text-3xl font-medium text-right my-auto ">
+                        <a href="#" class="text-white">زال هاست</a>
+                    </h1>
+                    
+                    <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none text-white"> 
+                        &#9776;
+                    </button>
+                </section>
+            </header>
+            <div class="flex flex-row justify-center mt-20 sm:w-5/6 mx-auto ">
+                <div class=" w-1/2">
+                    <img class="h-auto rotate-y-180" src="../img/layout-86-banner.png" alt="server image">
+                </div>
+                <div class=" w-1/2 flex flex-row-reverse">
+                    <!-- social media icons -->
+                    <div class="w-[20%] h-full flex flex-col justify-center items-center">
+                        <a href="#" class="bg-transparent  border border-white w-10 h-10 rounded-full move-up
+                            flex justify-center items-center my-2 hover:border-orange-base hover:bg-orange-base">
+                            <img src="../icon/mail-512.png" alt="" class=" w-[60%] h-[60%]">
+                        </a>
+                        <a href="#" class=" bg-transparent border border-white w-10 h-10 rounded-full move-up
+                            flex justify-center items-center my-2 hover:border-orange-base hover:bg-orange-base">
+                            <img src="../icon/mail-512.png" alt="" class=" w-[60%] h-[60%]">
+                        </a>
+                        <a href="#" class=" bg-transparent border border-white w-10 h-10 rounded-full move-up
+                            flex justify-center items-center my-2 hover:border-orange-base hover:bg-orange-base">
+                            <img src="../icon/mail-512.png" alt="" class=" w-[60%] h-[60%]">
+                        </a>
+                    </div>
+                    <div class="w-[80%] h-full  flex flex-col justify-center">    
+                        <div class="flex flex-row-reverse">
+                            <div class=" w-12 h-9 flex items-center">
+                                <div class="h-0.5 w-full bg-base-color"></div>
+                            </div>
+                            <p class=" h-9 flex items-center text-white mx-3 text-base font-medium">با زال همیشه کون سفید بمانید </p>
+                        </div>
+                        
+                        <p class="text-right text-6xl leading-snug font-bold text-white">بهترین شرکت هاستینگ دنیا</p>
+                        <p class="text-right text-base text-white font-medium my-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده <br>از طراحان گرافیک است</p>
+                        <div class="flex flex-row-reverse mt-6">
+                            <a href="#" class="text-base py-3 px-8 bg-orange-base border-2 border-orange-base
+                            rounded-l-full rounded-r-full transition duration-300 hover:bg-transparent hover:border-orange-base mr-3 text-gray-200">ورود کنید</a>
+                            <a href="#" class="text-base py-3 px-8  border-2 border-gray-400 bg-transparent
+                            rounded-l-full rounded-r-full transition duration-300  hover:border-orange-base mr-4 text-gray-200">خروج کنید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuButton = document.getElementById('mobile-open-button');
+            const mainMenu = document.getElementById('main-menu');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mainMenu.classList.toggle('hidden');
+            });
+        </script>
+    </body>
+</html>
+
+</html>
